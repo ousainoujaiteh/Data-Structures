@@ -169,7 +169,6 @@ public class SortingImplementation {
     private static int partition(int[] arr, int low, int high) {
         // Choose the rightmost element as pivot
         int pivot = arr[high];
-
         // Index of smaller element and indicates the right position of pivot found so far
         int i = (low - 1);
 
@@ -184,7 +183,6 @@ public class SortingImplementation {
                 arr[j] = temp;
             }
         }
-
         // Place the pivot in its correct position
         int temp = arr[i + 1];
         arr[i + 1] = arr[high];
