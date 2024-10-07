@@ -19,7 +19,7 @@ public class InsertionSortVisualizer {
                 int j = i - 1;
 
                 sortingPanel.highlight(i);
-                Thread.sleep(30);
+                Thread.sleep(50);
 
                 while (j >= 0 && array[j] > key) {
                     array[j + 1] = array[j];
@@ -27,11 +27,11 @@ public class InsertionSortVisualizer {
 
                     sortingPanel.repaint();
                     sortingPanel.highlight(j);
-                    Thread.sleep(30);
+                    Thread.sleep(50);
                 }
                 array[j + 1] = key;
                 sortingPanel.repaint();
-                Thread.sleep(30);
+                Thread.sleep(50);
             }
             sortingPanel.resetHighlights();
         } catch (InterruptedException e) {

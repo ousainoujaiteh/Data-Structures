@@ -19,17 +19,17 @@ public class SelectionSortVisualizer {
                 sortingPanel.highlight(minIdx);
                 for (int j = i + 1; j < n; j++) {
                     sortingPanel.compare(minIdx, j);
-                    Thread.sleep(30);
+                    Thread.sleep(50);
 
                     if (array[j] < array[minIdx]) {
                         minIdx = j;
                         sortingPanel.highlight(minIdx);
-                        Thread.sleep(30);
+                        Thread.sleep(50);
                     }
                 }
                 ArrayUtils.swap(array, minIdx, i);
                 sortingPanel.repaint();
-                Thread.sleep(30);
+                Thread.sleep(50);
             }
             sortingPanel.resetHighlights();
         } catch (InterruptedException e) {

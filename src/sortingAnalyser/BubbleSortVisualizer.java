@@ -19,13 +19,13 @@ public class BubbleSortVisualizer {
                 swapped = false;
                 for (int j = 0; j < n - i - 1; j++) {
                     sortingPanel.compare(j, j + 1);
-                    Thread.sleep(30); // Pause for visualization
+                    Thread.sleep(50); // Pause for visualization
 
                     if (array[j] > array[j + 1]) {
                         ArrayUtils.swap(array, j, j + 1);
                         swapped = true;
                         sortingPanel.repaint();
-                        Thread.sleep(30); // Pause after swap
+                        Thread.sleep(50); // Pause after swap
                     }
                 }
                 if (!swapped) break;

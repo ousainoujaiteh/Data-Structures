@@ -21,7 +21,7 @@ public class SortingPanel extends JPanel {
      * Generates a new random array.
      */
     public void generateNewArray() {
-        int size = 50;
+        int size = 100;
         array = new int[size];
         Random rand = new Random();
 

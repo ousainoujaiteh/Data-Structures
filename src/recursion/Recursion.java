@@ -3,7 +3,16 @@ package recursion;
 public class Recursion {
 
     public static void main(String[] args) {
+        System.out.println(isPrime(13,7));
+    }
 
+
+    public static int factorial(int n){
+        if ( n <=1 ){
+            return 1;
+        }else {
+            return n * factorial(n-1);
+        }
     }
 
     public static boolean isPrime(int num , int i){
