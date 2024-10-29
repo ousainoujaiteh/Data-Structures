@@ -11,7 +11,7 @@ public class ArrayStack <V> {
     This type-casting is unsafe and produces a warning.
     Comment out the line below and execute again to see the warning.
     */
-    @SuppressWarnings("unchecked")
+//    @SuppressWarnings("unchecked")
     public ArrayStack(int max_size) {
         this.maxSize = max_size;
         this.top = -1; //initially when stack is empty
@@ -57,3 +57,4 @@ public class ArrayStack <V> {
     }
 
 }
+
